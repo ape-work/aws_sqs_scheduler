@@ -1,0 +1,21 @@
+{
+  "name": "aws-sqs-scheduler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=production DEBUG=info,error node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.4.6",
+    "config": "^1.21.0",
+    "debug": "^2.2.0",
+    "moment": "^2.14.1",
+    "node-schedule": "^1.1.1",
+    "promisify-node": "^0.4.0",
+    "sqs-consumer": "^3.2.0"
+  }
+}
