@@ -14,3 +14,4 @@ Thumbs.db
 .migrate
 staging.json
 production.json
+test.js
