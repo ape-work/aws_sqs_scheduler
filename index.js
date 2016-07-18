@@ -14,6 +14,10 @@ const index = {
 			region: opt.aws.region
 		});
 
+		if (!opt.consumers || !opt.consumers.length) {
+			return error('No consumers to load');
+		}
+
 		return Promise.all(
 			opt.consumers
 			.map(consumer => lambda.getFunction({FunctionName: consumer.functionName }).promise())
