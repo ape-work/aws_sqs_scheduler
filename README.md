@@ -21,7 +21,7 @@ Launch the scheduler and sqs queue consumers.
 	- **cron** (String) cron, ex: */2 * * * 1-5,
 	- **functionName** (String) event name,
 	- **Payload** (String) lambda event payload
-- **opt.cb** (Function) function thats is called in every aws lambda invoke, with {FunctionName, InvocationType, Payload}
+- **opt.cb** (Function) function thats is called in every aws lambda invoke, with {id, FunctionName, InvocationType, Payload}
 
 
 example:
@@ -48,6 +48,7 @@ sqs_scheculer.init({
 		Payload: ''
 	}],
 	cb: (event) => {
+		// event.id
 		// event.FunctionName
 		// event.InvocationType
 		// event.Payload
