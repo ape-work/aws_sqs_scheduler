@@ -2,6 +2,10 @@
 
 A tiny helper to manage scheduled lambda function and sqs + lambda using BBC`s [sqs-consumer](http://mrdoob.com/projects/code-editor/).
 
+## Installation
+```
+npm install aws-sqs-schedule
+```
 
 ## Usage
 
